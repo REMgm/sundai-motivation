@@ -1,0 +1,36 @@
+name: Download and commit header image
+
+on:
+  workflow_dispatch:
+    inputs:
+      image_url:
+        description: 'URL of the image to download'
+        required: true
+        default: 'https://o.uguu.se/sVBqqCFJ.png'
+      target_path:
+        description: 'Target path in repo'
+        required: true
+        default: 'assets/headers/opening-welcome.jpg'
+
+jobs:
+  download-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download image
+        run: |
+          curl -L -o "${{ github.event.inputs.target_path }}" "${{ github.event.inputs.image_url }}"
+          echo "Downloaded $(stat -c%s "${{ github.event.inputs.target_path }}") bytes"
+          file "${{ github.event.inputs.target_path }}"
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add "${{ github.event.inputs.target_path }}"
+          git commit -m "Add opening article header image" --allow-empty
+          git push
