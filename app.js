@@ -80,34 +80,30 @@
   const now = new Date();
 
   const articles = [
-    { week: 0, publishDate: '2026-02-28', date: 'Feb 29, 2026', title: "Welcome to SundAI Motivation. Here's Why This Series Exists.", time: '6 min', img: './assets/headers/opening-welcome.jpg', slug: 'opening-welcome' },
-    { week: 1, publishDate: '2026-03-08', date: 'Mar 8, 2026', title: 'AI Is Moving at the Speed of Light.', time: '7 min', img: './assets/headers/week01-speed-of-ai.jpg', slug: 'week01-speed-of-ai' },
-    { week: 2, publishDate: '2026-03-15', date: 'Mar 15, 2026', title: "Everyone Says They're 'Doing AI.' Almost Nobody Is Doing It Well.", time: '8 min', img: './assets/headers/week02-ambition-execution-gap.jpg', slug: 'week02-ambition-execution-gap' },
-    { week: 3, publishDate: '2026-03-22', date: 'Mar 22, 2026', title: 'Your Employees Are Already Using AI.', time: '7 min', img: './assets/headers/week03-shadow-ai.jpg', slug: 'week03-shadow-ai' },
-    { week: 4, publishDate: '2026-03-29', date: 'Mar 29, 2026', title: 'Why 74% of CEOs Are Terrified of AI', time: '8 min', img: './assets/headers/week04-ceo-fear.jpg', slug: 'week04-ceo-fear' },
-    { week: 5, publishDate: '2026-04-05', date: 'Apr 5, 2026', title: 'The Companies Getting AI Right, and the Ones Getting Left Behind', time: '9 min', img: './assets/headers/week05-winners-losers.jpg', slug: 'week05-winners-losers' },
-    { week: 6, publishDate: '2026-04-12', date: 'Apr 12, 2026', title: "The Biggest Threat to Your AI Strategy Isn't Technology.", time: '7 min', img: './assets/headers/week06-team-resistance.jpg', slug: 'week06-team-resistance' },
-    { week: 7, publishDate: '2026-04-19', date: 'Apr 19, 2026', title: 'Your First Week of Taking AI Seriously', time: '8 min', img: './assets/headers/week07-first-steps.jpg', slug: 'week07-first-steps' },
-    { week: 8, publishDate: '2026-04-26', date: 'Apr 26, 2026', title: "You Don't Need a Huge Budget to Start.", time: '7 min', img: './assets/headers/week08-smart-starting-point.jpg', slug: 'week08-smart-starting-point' },
-    { week: 9, publishDate: '2026-05-03', date: 'May 3, 2026', title: 'How to Prove AI ROI to Your Board', time: '8 min', img: './assets/headers/week09-proving-roi.jpg', slug: 'week09-proving-roi' },
-    { week: 10, publishDate: '2026-05-10', date: 'May 10, 2026', title: "AI Won't Replace Leaders.", time: '7 min', img: './assets/headers/week10-human-plus-ai.jpg', slug: 'week10-human-plus-ai' },
-    { week: 11, publishDate: '2026-05-17', date: 'May 17, 2026', title: 'How to Bring Your Whole Company Along', time: '8 min', img: './assets/headers/week11-culture-transformation.jpg', slug: 'week11-culture-transformation' },
-    { week: 12, publishDate: '2026-05-24', date: 'May 24, 2026', title: "It's Not Too Late. In Fact, the Timing Has Never Been Better.", time: '7 min', img: './assets/headers/week12-perfect-timing.jpg', slug: 'week12-perfect-timing' },
+    { week: 0, publishDate: '2026-01-04', date: 'Jan 4, 2026', title: "Welcome to SundAI Motivation. Here's Why This Series Exists.", time: '6 min', img: './assets/headers/opening-welcome.jpg', slug: 'opening-welcome' },
+    { week: 1, publishDate: '2026-01-11', date: 'Jan 11, 2026', title: 'AI Is Moving at the Speed of Light.', time: '7 min', img: './assets/headers/week01-speed-of-ai.jpg', slug: 'week01-speed-of-ai' },
+    { week: 2, publishDate: '2026-01-18', date: 'Jan 18, 2026', title: "Everyone Says They're 'Doing AI.' Almost Nobody Is Doing It Well.", time: '8 min', img: './assets/headers/week02-ambition-execution-gap.jpg', slug: 'week02-ambition-execution-gap' },
+    { week: 3, publishDate: '2026-01-25', date: 'Jan 25, 2026', title: 'Your Employees Are Already Using AI.', time: '7 min', img: './assets/headers/week03-shadow-ai.jpg', slug: 'week03-shadow-ai' },
+    { week: 4, publishDate: '2026-02-01', date: 'Feb 1, 2026', title: 'Why 74% of CEOs Are Terrified of AI', time: '8 min', img: './assets/headers/week04-ceo-fear.jpg', slug: 'week04-ceo-fear' },
+    { week: 5, publishDate: '2026-02-08', date: 'Feb 8, 2026', title: 'The Companies Getting AI Right, and the Ones Getting Left Behind', time: '9 min', img: './assets/headers/week05-winners-losers.jpg', slug: 'week05-winners-losers' },
+    { week: 6, publishDate: '2026-02-15', date: 'Feb 15, 2026', title: "The Biggest Threat to Your AI Strategy Isn't Technology.", time: '7 min', img: './assets/headers/week06-team-resistance.jpg', slug: 'week06-team-resistance' },
+    { week: 7, publishDate: '2026-02-22', date: 'Feb 22, 2026', title: 'Your First Week of Taking AI Seriously', time: '8 min', img: './assets/headers/week07-first-steps.jpg', slug: 'week07-first-steps' },
+    { week: 8, publishDate: '2026-03-01', date: 'Mar 1, 2026', title: "You Don't Need a Huge Budget to Start.", time: '7 min', img: './assets/headers/week08-smart-starting-point.jpg', slug: 'week08-smart-starting-point' },
+    { week: 9, publishDate: '2026-03-08', date: 'Mar 8, 2026', title: 'How to Prove AI ROI to Your Board', time: '8 min', img: './assets/headers/week09-proving-roi.jpg', slug: 'week09-proving-roi' },
+    { week: 10, publishDate: '2026-03-15', date: 'Mar 15, 2026', title: "AI Won't Replace Leaders.", time: '7 min', img: './assets/headers/week10-human-plus-ai.jpg', slug: 'week10-human-plus-ai' },
+    { week: 11, publishDate: '2026-03-22', date: 'Mar 22, 2026', title: 'How to Bring Your Whole Company Along', time: '8 min', img: './assets/headers/week11-culture-transformation.jpg', slug: 'week11-culture-transformation' },
+    { week: 12, publishDate: '2026-03-29', date: 'Mar 29, 2026', title: "It's Not Too Late. In Fact, the Timing Has Never Been Better.", time: '7 min', img: './assets/headers/week12-perfect-timing.jpg', slug: 'week12-perfect-timing' },
   ];
 
   const articlesGrid = document.querySelector('.articles-grid');
   if (articlesGrid) {
-    // Filter articles: only show those whose publishDate <= today
+    // Show articles: hide future articles (publishDate > today)
     const visibleArticles = articles.filter(article => {
       const pubDate = new Date(article.publishDate + 'T00:00:00');
       return now >= pubDate;
     });
 
-    if (visibleArticles.length === 0) {
-      // Show a "coming soon" message if no articles are published yet
-      articlesGrid.innerHTML = '<p style="color: var(--color-text-muted); font-family: var(--font-body); text-align: center; grid-column: 1 / -1; padding: var(--space-12) 0;">The first article drops soon. Stay tuned.</p>';
-    } else {
-      visibleArticles.forEach((article, index) => {
+    visibleArticles.forEach((article, index) => {
         const card = document.createElement('a');
         card.href = './articles/' + article.slug + '.html';
         card.className = 'article-card fade-in';
@@ -125,7 +121,6 @@
         `;
         articlesGrid.appendChild(card);
       });
-    }
   }
 
   // ====== COUNT-UP ANIMATION ======
