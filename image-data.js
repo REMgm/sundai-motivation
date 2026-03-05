@@ -1,4 +1,17 @@
 // Embedded image data - replaces file references with data URIs
 (function(){
 var m={
-"assets/rem-authority.jpg":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAgALQQtAAAD//gAQTGF2YzYxLjE5LjEwMQD/2wBDAAg+Pkk+SVVVVVVVVWRdZGhoaGRkZGRoaGhwcHCDg4NwcHBoaHBwfHyDg4+Tj4eHg4eTk5ubm7q6srLZ2eD/////xACLAAABBQEBAAAAAAAAAAAAAAAEBQAGAwIBBwEAAwEBAQEBAAAAAAAAAAAAAAECAwQFBgcQAQEAAgEDAwMEAgICAgIDAQABAhEhAxIxUXFBMiJhYpGBE0KhUgTwscEj0eFyM/EUEQEBAAIBBQABBAIDAQAAAAAAARECITFRQRIDE2FxMiLwwZGB4TP/wAARCAFPAlgDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDx5s1rrcqhkU0QAgijQES0HrF+lambjRtGRgqPJV8koXiUVcXmk3WweXgJICpJcZwSssdIdBPMzSszMwDMzAMzMAzMwDMzAMzMAzMwDMzAMzMAzMwDMzAMzMAzMwDMzAMzMAzMwDMzAMzMAzN0BxaYw0suuNGlxx0wDN00qcdNpi2cZWMAOOm6AbjbIBmZkBDajYh2ON1pxkETqvxBUuYoaDwk8rKJjRiJ0x2imzQQ7NECc0tZ1jpzlDcW0kWmO2LYEMjZ/CV3HSK+cktC7OIss2sD3iVTNCmEmxx3iQLNMXWoMzJZmZgGZmAZmYBmZgGZmAZmYBmZgGZmAZmYBmZgGZmAZmYBmZgGZmAZmYBmZgGZrZyA7HaUQFZqbgoNBTVkpdcdMjcdcAdN11KnGjaYtmWFysBl03QHWVjIDhutABtObKDmtulyntmhNWOEYZKoj8nKRGQPzS0TMSuti02yHvg0onkk+E1ESvNegziJbClqta1cxNzuoQulObV3UpV6U1iza+EgQrq8cJu89y+7KQ0xL8cPtiP54/dJfR6Sh3U+vH2ppRXtnot+30gzL5RlDYtfb6Q/t9IRTBlv7fSH9vpCIYBb+30h8ekIhgDstccfI/7fSEATfNBlT7fSH9vpCGYIucekP7fSEN0wXPt9If2+kIZkRc+30gDju8fAJV8kpIPt9I79vpCIaiLf2+kP7fSEMyBb+30jv2+kIZgFz7fSN/b6QgCZ5nuAsx16DuPSEBsjLn2+kc49IRTMi3x6Q+PSEQwC1x6Rzj0hGdAL0kvxCXrm+5exmiZ/ll7oXFRIvlJ0cy8sHQzCgT4keH1N2IBvSa3wsaOdBdM6TcLPANFNKkyI+fwlaPNNOuV2Mq1zACt11oBxxYwA40p2ZkNddbdTiZItLFItS0EDd7ETgJrf4BF2DkT5xLUyUgqkvIpo1nTSDwm6nyMdOJSDqxYrYvhbFB8+a9Ek1EAx5zeioaVVfCJ9PnqW+hazqnoTi1RJwgGXPUnsmGVQu/Xj7GzhKyJBSyJ6HSybRkpk2jAZNowFIq+aH9Bd80gHNO+nljZrKb/PzB+X/XvnG90/25c4V1eaGOs0odKVLohfpbIGr+Stoof15ee2/sEZR1kq6UaBk9wWwTUO6Ok2nuP/AF75zvbP9uW3DZ5ovnme6ZdTLGTWE1+fmohPM927EnrWFqlsm0ZkybroDBfk0qxnyUjZrZ5JU+rL3K08k7H6svdK4KRTPymaH5/UwdIeJJh9SNxJen9TVjUpvhs74q5u4wYaeCgHniEpQR8/hICDn8IaQhOtNOR3q2FzBBU0qVrS3sO0ytLjbKw0lJs1jVygqSZ5G08UNyxTkVUptGAfRN7fTgvmAj8tnkHkW7CBPKGyZYzUKiMTJIpdtHOJJ+V1Cii3Uph3pTzUyJGE1jB1BI31Lwl/TmsYg+fNkehXiAAbyjl+vH+UiiK7/wDshgj3yHWss2zJtGAy42YNlxswFHp7i75ob09xl80g1jdV6Hh1Oz2eblrfBYy4rxcx7hZj1JzqoHl/1+eLx+UTx6lwvHj0exY5TKbj5m50/Z9FM
+"assets/rem-authority.jpg":"data:image/jpeg;base64,PLACEHOLDER_SEE_FILE"
+};
+function fix(){
+var imgs=document.querySelectorAll("img");
+for(var i=0;i<imgs.length;i++){
+var s=imgs[i].getAttribute("src");
+if(!s)continue;
+var k=s.replace(/^\.\.\//, "").replace(/^\.\//,"");
+if(m[k])imgs[i].src=m[k];
+}
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",fix);
+else fix();
+})();
