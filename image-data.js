@@ -1,1 +1,1 @@
-PLACEHOLDER_WILL_BE_REPLACED
+CONTENT_FROM_FILE:/home/user/workspace/remcovroom-site/image-data.js
