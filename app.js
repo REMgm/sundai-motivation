@@ -80,19 +80,19 @@
   const now = new Date();
 
   const articles = [
-    { week: 0, publishDate: '2026-01-04', date: 'Jan 4, 2026', title: "Welcome to SundAI Motivation. Here's Why This Series Exists.", time: '6 min', img: './assets/headers/opening-welcome.jpg', slug: 'opening-welcome' },
-    { week: 1, publishDate: '2026-01-11', date: 'Jan 11, 2026', title: 'AI Is Moving at the Speed of Light.', time: '7 min', img: './assets/headers/week01-speed-of-ai.jpg', slug: 'week01-speed-of-ai' },
-    { week: 2, publishDate: '2026-01-18', date: 'Jan 18, 2026', title: "Everyone Says They're 'Doing AI.' Almost Nobody Is Doing It Well.", time: '8 min', img: './assets/headers/week02-ambition-execution-gap.jpg', slug: 'week02-ambition-execution-gap' },
-    { week: 3, publishDate: '2026-01-25', date: 'Jan 25, 2026', title: 'Your Employees Are Already Using AI.', time: '7 min', img: './assets/headers/week03-shadow-ai.jpg', slug: 'week03-shadow-ai' },
-    { week: 4, publishDate: '2026-02-01', date: 'Feb 1, 2026', title: 'Why 74% of CEOs Are Terrified of AI', time: '8 min', img: './assets/headers/week04-ceo-fear.jpg', slug: 'week04-ceo-fear' },
-    { week: 5, publishDate: '2026-02-08', date: 'Feb 8, 2026', title: 'The Companies Getting AI Right, and the Ones Getting Left Behind', time: '9 min', img: './assets/headers/week05-winners-losers.jpg', slug: 'week05-winners-losers' },
-    { week: 6, publishDate: '2026-02-15', date: 'Feb 15, 2026', title: "The Biggest Threat to Your AI Strategy Isn't Technology.", time: '7 min', img: './assets/headers/week06-team-resistance.jpg', slug: 'week06-team-resistance' },
-    { week: 7, publishDate: '2026-02-22', date: 'Feb 22, 2026', title: 'Your First Week of Taking AI Seriously', time: '8 min', img: './assets/headers/week07-first-steps.jpg', slug: 'week07-first-steps' },
-    { week: 8, publishDate: '2026-03-01', date: 'Mar 1, 2026', title: "You Don't Need a Huge Budget to Start.", time: '7 min', img: './assets/headers/week08-smart-starting-point.jpg', slug: 'week08-smart-starting-point' },
-    { week: 9, publishDate: '2026-03-08', date: 'Mar 8, 2026', title: 'How to Prove AI ROI to Your Board', time: '8 min', img: './assets/headers/week09-proving-roi.jpg', slug: 'week09-proving-roi' },
-    { week: 10, publishDate: '2026-03-15', date: 'Mar 15, 2026', title: "AI Won't Replace Leaders.", time: '7 min', img: './assets/headers/week10-human-plus-ai.jpg', slug: 'week10-human-plus-ai' },
-    { week: 11, publishDate: '2026-03-22', date: 'Mar 22, 2026', title: 'How to Bring Your Whole Company Along', time: '8 min', img: './assets/headers/week11-culture-transformation.jpg', slug: 'week11-culture-transformation' },
-    { week: 12, publishDate: '2026-03-29', date: 'Mar 29, 2026', title: "It's Not Too Late. In Fact, the Timing Has Never Been Better.", time: '7 min', img: './assets/headers/week12-perfect-timing.jpg', slug: 'week12-perfect-timing' },
+    { week: 0, publishDate: '2026-01-04', date: 'Jan 4, 2026', title: "Welcome to SundAI Motivation. Here's Why This Series Exists.", time: '6 min', img: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=450&fit=crop&q=85', slug: 'opening-welcome' },
+    { week: 1, publishDate: '2026-01-11', date: 'Jan 11, 2026', title: 'AI Is Moving at the Speed of Light.', time: '7 min', img: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=450&fit=crop&q=85', slug: 'week01-speed-of-ai' },
+    { week: 2, publishDate: '2026-01-18', date: 'Jan 18, 2026', title: "Everyone Says They're 'Doing AI.' Almost Nobody Is Doing It Well.", time: '8 min', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop&q=85', slug: 'week02-ambition-execution-gap' },
+    { week: 3, publishDate: '2026-01-25', date: 'Jan 25, 2026', title: 'Your Employees Are Already Using AI.', time: '7 min', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=450&fit=crop&q=85', slug: 'week03-shadow-ai' },
+    { week: 4, publishDate: '2026-02-01', date: 'Feb 1, 2026', title: 'Why 74% of CEOs Are Terrified of AI', time: '8 min', img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=450&fit=crop&q=85', slug: 'week04-ceo-fear' },
+    { week: 5, publishDate: '2026-02-08', date: 'Feb 8, 2026', title: 'The Companies Getting AI Right, and the Ones Getting Left Behind', time: '9 min', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop&q=85', slug: 'week05-winners-losers' },
+    { week: 6, publishDate: '2026-02-15', date: 'Feb 15, 2026', title: "The Biggest Threat to Your AI Strategy Isn't Technology.", time: '7 min', img: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=450&fit=crop&q=85', slug: 'week06-team-resistance' },
+    { week: 7, publishDate: '2026-02-22', date: 'Feb 22, 2026', title: 'Your First Week of Taking AI Seriously', time: '8 min', img: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=450&fit=crop&q=85', slug: 'week07-first-steps' },
+    { week: 8, publishDate: '2026-03-01', date: 'Mar 1, 2026', title: "You Don't Need a Huge Budget to Start.", time: '7 min', img: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=450&fit=crop&q=85', slug: 'week08-smart-starting-point' },
+    { week: 9, publishDate: '2026-03-08', date: 'Mar 8, 2026', title: 'How to Prove AI ROI to Your Board', time: '8 min', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&q=85', slug: 'week09-proving-roi' },
+    { week: 10, publishDate: '2026-03-15', date: 'Mar 15, 2026', title: "AI Won't Replace Leaders.", time: '7 min', img: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&h=450&fit=crop&q=85', slug: 'week10-human-plus-ai' },
+    { week: 11, publishDate: '2026-03-22', date: 'Mar 22, 2026', title: 'How to Bring Your Whole Company Along', time: '8 min', img: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=450&fit=crop&q=85', slug: 'week11-culture-transformation' },
+    { week: 12, publishDate: '2026-03-29', date: 'Mar 29, 2026', title: "It's Not Too Late. In Fact, the Timing Has Never Been Better.", time: '7 min', img: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=450&fit=crop&q=85', slug: 'week12-perfect-timing' },
   ];
 
   const articlesGrid = document.querySelector('.articles-grid');
@@ -104,14 +104,12 @@
     });
 
     visibleArticles.forEach((article, index) => {
-        const imgKey = article.img.replace(/^\.\//,"");
-        const imgSrc = (window._img && window._img[imgKey]) ? window._img[imgKey] : article.img;
         const card = document.createElement('a');
         card.href = './articles/' + article.slug + '.html';
         card.className = 'article-card fade-in';
         card.style.animationDelay = `${index * 50}ms`;
         card.innerHTML = `
-          <img src="${imgSrc}" alt="${article.title}" class="article-card-image" loading="lazy" width="400" height="225">
+          <img src="${article.img}" alt="${article.title}" class="article-card-image" loading="lazy" width="400" height="225">
           <div class="article-card-body">
             <h3 class="article-card-title">${article.title}</h3>
             <div class="article-card-meta">
