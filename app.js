@@ -104,12 +104,14 @@
     });
 
     visibleArticles.forEach((article, index) => {
+        const imgKey = article.img.replace(/^\.\//,"");
+        const imgSrc = (window._img && window._img[imgKey]) ? window._img[imgKey] : article.img;
         const card = document.createElement('a');
         card.href = './articles/' + article.slug + '.html';
         card.className = 'article-card fade-in';
         card.style.animationDelay = `${index * 50}ms`;
         card.innerHTML = `
-          <img src="${article.img}" alt="${article.title}" class="article-card-image" loading="lazy" width="400" height="225">
+          <img src="${imgSrc}" alt="${article.title}" class="article-card-image" loading="lazy" width="400" height="225">
           <div class="article-card-body">
             <h3 class="article-card-title">${article.title}</h3>
             <div class="article-card-meta">
