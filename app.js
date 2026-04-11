@@ -92,6 +92,7 @@
     { week: 9, publishDate: '2026-03-08', date: 'Mar 8, 2026', title: 'How to Prove AI ROI to Your Board', time: '8 min', img: './assets/headers/week09-proving-roi.jpg', slug: 'week09-proving-roi' },
     { week: 10, publishDate: '2026-03-15', date: 'Mar 15, 2026', title: "AI Won't Replace Leaders.", time: '7 min', img: './assets/headers/week10-human-plus-ai.jpg', slug: 'week10-human-plus-ai' },
     { week: 11, publishDate: '2026-03-22', date: 'Mar 22, 2026', title: 'How to Bring Your Whole Company Along', time: '8 min', img: './assets/headers/week11-culture-transformation.jpg', slug: 'week11-culture-transformation' },
+    { week: 13, publishDate: '2026-04-12', date: 'Apr 12, 2026', title: "AI Agents Are Now Hiring Humans. Yes, You Read That Right.", time: '8 min', img: './assets/headers/week13-agents-hiring-humans.jpg', slug: 'week13-agents-hiring-humans' },
     { week: 12, publishDate: '2026-03-29', date: 'Mar 29, 2026', title: "It's Not Too Late. In Fact, the Timing Has Never Been Better.", time: '7 min', img: './assets/headers/week12-perfect-timing.jpg', slug: 'week12-perfect-timing' },
   ];
 
