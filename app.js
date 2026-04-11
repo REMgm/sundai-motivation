@@ -102,7 +102,7 @@
     const visibleArticles = articles.filter(article => {
       const pubDate = new Date(article.publishDate + 'T00:00:00');
       return now >= pubDate;
-    });
+    }).reverse();
 
     visibleArticles.forEach((article, index) => {
         const card = document.createElement('a');
