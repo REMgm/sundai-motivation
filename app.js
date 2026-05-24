@@ -95,6 +95,7 @@
     { week: 12, publishDate: '2026-03-29', date: 'Mar 29, 2026', title: "It's Not Too Late. In Fact, the Timing Has Never Been Better.", time: '7 min', img: './assets/headers/week12-perfect-timing.jpg', slug: 'week12-perfect-timing' },
     { week: 13, publishDate: '2026-04-11', date: 'Apr 12, 2026', title: "AI Agents Are Now Hiring Humans. Yes, You Read That Right.", time: '8 min', img: './assets/headers/week13-agents-hiring-humans.jpg', slug: 'week13-agents-hiring-humans' },
     { week: 14, publishDate: '2026-04-17', date: 'Apr 19, 2026', title: "Figma Lost 7%. Here's Why Design Systems Just Became Your Most Valuable Asset.", time: '7 min', img: './assets/headers/week14-design-systems.jpg', slug: 'week14-design-systems' },
+    { week: 16, publishDate: '2026-05-02', date: 'May 3, 2026', title: "The CEO at the Tiny Desk: Why Every Executive Needs to Become an AI Practitioner.", time: '8 min', img: './assets/headers/week16-ceo-tiny-desk.jpg', slug: 'week16-ceo-tiny-desk' },
   ];
 
   const articlesGrid = document.querySelector('.articles-grid');
