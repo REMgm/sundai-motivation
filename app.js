@@ -96,6 +96,7 @@
     { week: 13, publishDate: '2026-04-11', date: 'Apr 12, 2026', title: "AI Agents Are Now Hiring Humans. Yes, You Read That Right.", time: '8 min', img: './assets/headers/week13-agents-hiring-humans.jpg', slug: 'week13-agents-hiring-humans' },
     { week: 14, publishDate: '2026-04-17', date: 'Apr 19, 2026', title: "Figma Lost 7%. Here's Why Design Systems Just Became Your Most Valuable Asset.", time: '7 min', img: './assets/headers/week14-design-systems.jpg', slug: 'week14-design-systems' },
     { week: 16, publishDate: '2026-05-02', date: 'May 3, 2026', title: "The CEO at the Tiny Desk: Why Every Executive Needs to Become an AI Practitioner.", time: '8 min', img: './assets/headers/week16-ceo-tiny-desk.jpg', slug: 'week16-ceo-tiny-desk' },
+    { week: 17, publishDate: '2026-05-30', date: 'May 31, 2026', title: "Stop Thinking So Hard (You're Doing It Backwards)", time: '6 min', img: './assets/headers/week17-effort-control.jpg', slug: 'week17-effort-control' },
   ];
 
   const articlesGrid = document.querySelector('.articles-grid');
