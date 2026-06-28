@@ -98,7 +98,7 @@
     { week: 16, publishDate: '2026-05-02', date: 'May 3, 2026', title: "The CEO at the Tiny Desk: Why Every Executive Needs to Become an AI Practitioner.", time: '8 min', img: './assets/headers/week16-ceo-tiny-desk.jpg', slug: 'week16-ceo-tiny-desk' },
     { week: 17, publishDate: '2026-05-30', date: 'May 31, 2026', title: "Stop Thinking So Hard (You're Doing It Backwards)", time: '6 min', img: './assets/headers/week17-effort-control.jpg', slug: 'week17-effort-control' },
     { week: 18, publishDate: '2026-06-14', date: 'Jun 14, 2026', title: "The Brief Is the Bottleneck: Claude Fable 5 Just Made Your Weakest Skill Visible", time: '8 min', img: './assets/headers/week18-fable-brief-bottleneck.jpg', slug: 'week18-fable-brief-bottleneck' },
-    { week: 19, publishDate: '2026-06-27', date: 'Jun 28, 2026', title: "Your AI Team Has More Members Than You Think: Why Every Executive Is Now a Manager of Agents.", time: '8 min', img: './assets/headers/week18-manager-of-agents.jpg', slug: 'week18-manager-of-agents' },
+    { week: 19, publishDate: '2026-06-27', date: 'Jun 28, 2026', title: "Your AI Team Has More Members Than You Think: Why Every Person Is Now a Manager of Agents.", time: '8 min', img: './assets/headers/week18-manager-of-agents.jpg', slug: 'week18-manager-of-agents' },
   ];
 
   const articlesGrid = document.querySelector('.articles-grid');
