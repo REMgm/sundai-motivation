@@ -99,6 +99,7 @@
     { week: 17, publishDate: '2026-05-30', date: 'May 31, 2026', title: "Stop Thinking So Hard (You're Doing It Backwards)", time: '6 min', img: './assets/headers/week17-effort-control.jpg', slug: 'week17-effort-control' },
     { week: 18, publishDate: '2026-06-14', date: 'Jun 14, 2026', title: "The Brief Is the Bottleneck: Claude Fable 5 Just Made Your Weakest Skill Visible", time: '8 min', img: './assets/headers/week18-fable-brief-bottleneck.jpg', slug: 'week18-fable-brief-bottleneck' },
     { week: 19, publishDate: '2026-06-27', date: 'Jun 28, 2026', title: "Your AI Team Has More Members Than You Think: Why Every Person Is Now a Manager of Agents.", time: '8 min', img: './assets/headers/week18-manager-of-agents.jpg', slug: 'week18-manager-of-agents' },
+    { week: 20, publishDate: '2026-07-05', date: 'Jul 5, 2026', title: "Your Agents Only Answer What You Ask: Why the Next Competitive Edge Is a Map of Your Ignorance", time: '9 min', img: './assets/headers/week20-the-map-of-your-ignorance.jpg', slug: 'week20-the-map-of-your-ignorance' },
   ];
 
   const articlesGrid = document.querySelector('.articles-grid');

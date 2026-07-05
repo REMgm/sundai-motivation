@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Agents Only Answer What You Ask: Why the Next Competitive Edge Is a Map of Your Ignorance, Remco Vroom | SundAI Motivation</title>
+  <meta name="description" content="Week 20 of SundAI Motivation, AI for Business Leaders, Simplified. By Remco Vroom.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../components.css">
+  <link rel="stylesheet" href="../article.css">
+
+  <script>document.documentElement.setAttribute('data-theme','dark');</script>
+  <style>
+    .prompt-box { background: rgba(127,127,127,0.08); border: 1px solid rgba(127,127,127,0.25); border-radius: 12px; padding: 1.5rem; margin: 2rem 0; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; line-height: 1.7; white-space: pre-wrap; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <!-- Reading progress -->
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="article-nav-bar" id="articleNav" role="navigation" aria-label="Article navigation">
+    <div class="article-nav-inner">
+      <div class="article-nav-left">
+        <a href="../index.html" class="nav-logo" aria-label="Remco Vroom home">
+          <span class="nav-logo-monogram">RV</span>
+        </a>
+        <a href="../index.html#articles" class="article-back-link">
+          <span aria-hidden="true">&#8592;</span>
+          <span class="back-text">Back to Articles</span>
+        </a>
+      </div>
+      <div class="nav-actions">
+        <button data-theme-toggle aria-label="Switch to light mode" class="theme-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Article Header -->
+    <header class="article-header">
+      <img src="../assets/headers/week20-the-map-of-your-ignorance.jpg" alt="Your Agents Only Answer What You Ask" class="article-header-image">
+      <div class="article-header-overlay" aria-hidden="true"></div>
+      <div class="article-header-content">
+        <span class="article-header-label">SundAI Motivation, Week 20</span>
+        <h1 class="article-header-title">Your Agents Only Answer What You Ask: Why the Next Competitive Edge Is a Map of Your Ignorance</h1>
+        <div class="article-meta">
+          <span class="article-meta-item">Remco Vroom</span>
+          <span class="article-meta-divider" aria-hidden="true">&middot;</span>
+          <span class="article-meta-item">Jul 5, 2026</span>
+          <span class="article-meta-divider" aria-hidden="true">&middot;</span>
+          <span class="article-meta-item">9 min read</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <div class="article-body">
+      <article class="article-content">
+
+        <p class="article-lead">Last week I told you that you're managing a team of agents. Here's the uncomfortable follow-up: your agents are perfectly obedient, and that's the problem. They answer exactly what you ask. Which means the quality ceiling of your entire AI operation is not the model, not the orchestration, not the memory layer. It's the boundary of what you know to ask.</p>
+
+        <p>Good morning, and welcome to SundAI Motivation.</p>
+
+        <p>Every Sunday I write one article for leaders who are serious about AI but don't have time to wade through the noise. No jargon. No hype. Just the signal you need to make better decisions this week.</p>
+
+        <p>Last week was about becoming a manager of agents: roles, chains, shared memory, the central brain. This week we go one level deeper, into the thing no orchestration diagram shows you. <strong>Every brief you write is a map. And every map has edges. What lives beyond the edges of your map is where agent projects quietly die, and where the biggest wins quietly wait.</strong></p>
+
+        <hr>
+
+        <h3>This Week in AI</h3>
+
+        <p>The numbers this week tell one story from two directions. AvePoint's 2026 State of AI report found that nearly half of employees now use AI agents weekly or daily, while 88% of organizations experienced at least one agent-related security incident in the past year. Meanwhile, a separate analysis reported that only about 7% of companies run fully autonomous agents in production, and even Mark Zuckerberg told Meta staff that agent development hasn't accelerated the way executives expected. Read those together: adoption is racing ahead of understanding. The incidents, the stalled pilots, the disappointed CEOs -- these are not technology failures. They are unknown unknowns arriving on schedule. Nobody budgeted for the pothole because nobody knew the road could have one.</p>
+
+        <hr>
+
+        <h3>The Deep Dive: The Four Quadrants of Every Brief You'll Ever Write</h3>
+
+        <h3>The Simple Version</h3>
+
+        <p>Donald Rumsfeld was mocked in 2002 for talking about "known knowns, known unknowns, and unknown unknowns." He was right, and the framework is more useful today than it ever was in geopolitics, because for the first time in history you have a workforce that will do <em>exactly</em> what you say, <em>only</em> what you say, and will never tap you on the shoulder to say "boss, you're missing something" -- unless you build that behavior in deliberately.</p>
+
+        <p>Every brief you hand to an agent, every prompt, every project kickoff, sits on a 2x2. I ask myself four questions before any significant piece of work:</p>
+
+        <p><strong>Known knowns.</strong> <em>This is essentially what's in my prompt. What do I tell the agent that I want?</em> The deliverable, the audience, the format, the deadline. This is where 90% of "prompt engineering" content lives, and it's the least interesting quadrant, because it's already commoditized. Everyone can write a decent prompt now. If your advantage lives here, you don't have one.</p>
+
+        <p><strong>Known unknowns.</strong> <em>What haven't I figured out yet, but I'm aware that I haven't?</em> Should the pricing model be usage-based or seat-based? Which market do we enter first? These are healthy gaps. You can delegate them, research them, test them. Agents are exceptional at closing known unknowns -- <em>if</em> you actually hand them over instead of guessing your way past them to hit a deadline.</p>
+
+        <p><strong>Unknown knowns.</strong> <em>What's so obvious I'd never write it down, but would recognize it if I saw it?</em> This is the quadrant executives underestimate most. It's your quality bar, your client's unspoken politics, the phrase your CEO hates, the reason the last three proposals in this category won. You possess this knowledge. Your agent doesn't. And because you don't know you're withholding it, you blame the output. "The AI doesn't get my business" is almost never a model problem. It's an unknown-known problem. The knowledge exists; it just lives in your head instead of your system.</p>
+
+        <p><strong>Unknown unknowns.</strong> <em>What haven't I considered at all? What knowledge am I not aware of? And do I even know how good something can be?</em> The pothole you didn't know the road could have -- but also the ceiling you never knew existed. The compliance rule in a market you've never sold into. The competitor move you didn't model. And, just as often, the tenfold better version of your own idea that you never asked for because you didn't know it was possible. This is the quadrant where the 88% of agent security incidents came from, and where Elena's contradicting agents from last week's article lived before she caught them.</p>
+
+        <hr>
+
+        <h3>The Flip: You Are the Blind Spot</h3>
+
+        <p>Here's the inversion, because the conventional framing gets this backwards.</p>
+
+        <p>The industry talks about AI hallucination as if the model is the unreliable party in the relationship. Flip it. In a well-run agent system, <strong>you are the primary source of missing information.</strong> The model has read more than you ever will. Your agents, if connected to your central brain, remember more than you do. The scarce resource in the loop is not intelligence. It's <em>your</em> tacit context and <em>your</em> awareness of your own gaps.</p>
+
+        <p>Which leads to the second inversion, and this is the one that changes how you work: <strong>stop using AI only to answer your questions. Start using AI to generate the questions you didn't know to ask.</strong></p>
+
+        <p>Most executives use agents as answer machines. Brief in, deliverable out. That workflow only ever operates in the first quadrant. It converts known knowns into output. It never touches the other three quadrants, which is where all the risk and all the upside live.</p>
+
+        <p>The leaders pulling ahead right now run the workflow in reverse. Before the agent produces anything, they make it interrogate the brief. Attack it. Map its edges. Surface the assumptions. Only then does it execute.</p>
+
+        <hr>
+
+        <h3>How the Quadrants Map to Your Agent System</h3>
+
+        <p>Remember the scaling walls from last week? They map cleanly onto this 2x2.</p>
+
+        <p><strong>Known knowns are a prompting problem.</strong> Solved at the tiny desk. Table stakes.</p>
+
+        <p><strong>Known unknowns are a delegation problem.</strong> You have questions; route them to the research agent instead of papering over them. Cheap to fix, if you're honest about what you don't know.</p>
+
+        <p><strong>Unknown knowns are a memory problem.</strong> This is precisely what the central brain exists for. Every review comment you make, every "no, not like that," every edit you apply to an agent's draft is an unknown known being forced into the open. If that correction evaporates at the end of the session, you'll make it again next week, forever. If it gets written into shared memory, it becomes a known known for every agent, permanently. This is the Compound Autonomy Loop doing its real job: Agent Creates Task, Heartbeat Picks Up, Memory Informs Execution, Lesson Stored. The "lesson stored" step is not logging. It is the systematic conversion of unknown knowns into institutional knowledge. Each cycle should shrink that quadrant.</p>
+
+        <p><strong>Unknown unknowns are a governance problem.</strong> No memory system fixes what nobody in the loop has considered. The only defense is structural: adversarial review, red-team agents whose entire role is to ask "what would make this fail?", and a discipline of running discovery <em>before</em> execution. You cannot eliminate this quadrant. You can only shrink it faster than your competitors shrink theirs.</p>
+
+        <p>That last sentence is the strategic point, so let me say it plainly: <strong>in a world where everyone has access to the same models, the durable advantage is the speed at which your organization converts unknowns into knowns.</strong> Model capability is rented. Your map of your own ignorance is owned.</p>
+
+        <hr>
+
+        <h3>The Prompt: The Excavation Protocol</h3>
+
+        <p>Enough theory. Here is the prompt I use to structurally uncover all four quadrants before any significant piece of work. Run it before the brief, not after the disappointing draft. Paste your draft brief below it and let the agent excavate.</p>
+
+        <div class="prompt-box">You are my pre-mortem strategist. I am about to brief an agent (or a team)
+on the task below. Before any work begins, interrogate this brief using the
+known/unknown 2x2. Do not execute the task. Do not be agreeable.
+
+[PASTE YOUR DRAFT BRIEF HERE]
+
+Work through four passes:
+
+1. KNOWN KNOWNS -- stress test.
+   Restate what I've explicitly asked for in one paragraph.
+   Then flag every instruction that is ambiguous, contradictory,
+   or doing less work than I think it is.
+
+2. KNOWN UNKNOWNS -- question extraction.
+   List the open questions this brief implies but does not answer.
+   Rank them by how much the final output changes depending on the answer.
+   Mark which ones I must answer myself and which ones you could
+   research or resolve on my behalf.
+
+3. UNKNOWN KNOWNS -- tacit knowledge excavation.
+   Interview me. Ask me a maximum of 7 questions designed to extract
+   context I obviously have but haven't written down: quality bar,
+   audience politics, past failures in this category, constraints I
+   consider "too obvious to mention," and what a rejected version of
+   this deliverable would look like. Ask them one at a time.
+
+4. UNKNOWN UNKNOWNS -- pothole and ceiling scan.
+   Take three perspectives I have not taken: a skeptical buyer, a
+   competitor who wants this to fail, and an auditor reviewing this
+   in 12 months. For each, name the risk or opportunity that is
+   invisible from inside my brief. Then tell me two things: the single
+   assumption in this brief that, if wrong, breaks everything -- and
+   what the 10x better version of this deliverable would look like
+   that I haven't imagined yet.
+
+End with a rewritten version of the brief that closes every gap we can
+close today, and a short list titled "Accepted Unknowns" for the gaps
+we are knowingly carrying into execution.
+
+Finally: everything extracted in pass 3 must be flagged as a candidate
+for permanent memory, so it never has to be extracted again.</div>
+
+        <p>Note the last line. Extraction without storage is theater. If your system has a central brain, every excavated unknown known gets written back. If it doesn't, this prompt is still worth running, but you'll be running it forever.</p>
+
+        <hr>
+
+        <h3>The Analogy</h3>
+
+        <p>Think about the best board member you've ever had. Not the one with the most answers. The one with the best questions. The one who sat quietly through your polished strategy deck and then asked the single question that exposed the assumption the whole plan balanced on. You didn't pay that person for knowledge. You paid them for revealing the shape of your ignorance while there was still time to act on it.</p>
+
+        <p>That is the role your agent system should play before every significant piece of work. Most people have hired a workforce of brilliant board members and use them exclusively as typists.</p>
+
+        <hr>
+
+        <h3>Your One Action This Week</h3>
+
+        <div class="action-box">
+          <p>Take the most important brief currently on your desk: the proposal, the transformation plan, the hire, the pitch. Run the Excavation Protocol on it before anyone, human or agent, executes another hour against it.</p>
+
+          <p>Then do one more thing. Look at what pass 3 surfaced -- the unknown knowns, the context you'd never have written down. Ask yourself: where does this knowledge live tomorrow? If the answer is "nowhere," you've found the highest-ROI infrastructure gap in your AI operation. It's not a bigger model. It's a memory.</p>
+        </div>
+
+        <hr>
+
+        <h3>The Pattern</h3>
+
+        <p>Week 16: become a practitioner. Sit at the tiny desk.</p>
+
+        <p>Week 18: the brief is the bottleneck. Learn to communicate with precision.</p>
+
+        <p>Week 19: you're managing a team. Learn to orchestrate.</p>
+
+        <p>This week: the map has edges. Learn to see past them.</p>
+
+        <p>The arc keeps climbing. First you learned to use the tools. Then to instruct them. Then to manage them. Now you learn the manager's final discipline, the one that separates competent operators from great ones: knowing that the most dangerous part of any plan is the part nobody thought to write down.</p>
+
+        <p><strong>Your agents will never refuse your brief. They'll also never tell you what's missing from it. Unless you ask. So ask.</strong></p>
+
+        <div class="article-series-footer">
+          <p>This is SundAI Motivation, AI for Business Leaders, Simplified. Follow Remco Vroom for weekly insights every Sunday.</p>
+          <span class="hashtags">#SundAIMotivation #AIforBusiness #AgenticAI #UnknownUnknowns #MapOfYourIgnorance</span>
+        </div>
+
+        <div class="article-share">
+          <span class="article-share-label">Share this article</span>
+          <div class="article-share-buttons">
+            <a class="share-btn share-btn--linkedin" href="#" onclick="shareLinkedIn(event)" aria-label="Share on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="share-btn share-btn--x" href="#" onclick="shareX(event)" aria-label="Share on X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <button class="share-btn share-btn--copy" onclick="copyLink(this)" aria-label="Copy link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <span>Copy link</span>
+            </button>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Remco Vroom</p>
+      <div class="footer-links">
+        <a href="https://monks.com" target="_blank" rel="noopener noreferrer">Powered by Monks</a>
+        <a href="https://www.linkedin.com/in/remcovroom/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    'use strict';
+    var toggle = document.querySelector('[data-theme-toggle]');
+    var root = document.documentElement;
+    var theme = 'dark';
+    function updateToggleIcon() {
+      if (!toggle) return;
+      toggle.innerHTML = theme === 'dark'
+        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    }
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        updateToggleIcon();
+        updateNavBg();
+      });
+    }
+    updateToggleIcon();
+    var nav = document.getElementById('articleNav');
+    function updateNavBg() {
+      if (window.scrollY > 50) { nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
+    }
+    window.addEventListener('scroll', updateNavBg, { passive: true });
+    updateNavBg();
+    var progressBar = document.getElementById('readingProgress');
+    function updateProgress() {
+      var scrollTop = window.scrollY;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  })();
+  </script>
+
+  <script src="../img-0.js"></script>
+  <script src="../img-1.js"></script>
+  <script src="../img-w05.js"></script>
+  <script src="../img-w06.js"></script>
+  <script src="../img-2.js"></script>
+  <script src="../img-fix.js"></script>
+
+  <script>
+  function shareLinkedIn(e) {
+    e.preventDefault();
+    var url = encodeURIComponent(window.location.href);
+    window.open("https://www.linkedin.com/sharing/share-offsite/?url=" + url, "_blank", "width=600,height=600");
+  }
+  function shareX(e) {
+    e.preventDefault();
+    var url = encodeURIComponent(window.location.href);
+    var title = encodeURIComponent(document.title);
+    var hashtags = "SundAIMotivation,AIforBusiness,AgenticAI";
+    window.open("https://x.com/intent/tweet?url=" + url + "&text=" + title + "&hashtags=" + hashtags, "_blank", "width=600,height=400");
+  }
+  function copyLink(btn) {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      btn.classList.add("copied");
+      btn.querySelector("span").textContent = "Copied!";
+      setTimeout(function() {
+        btn.classList.remove("copied");
+        btn.querySelector("span").textContent = "Copy link";
+      }, 2000);
+    });
+  }
+  </script>
+</body>
+</html>
