@@ -1,0 +1,20 @@
+name: Publish week20 article
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch staged files and commit
+        run: |
+          curl -fsSL -o articles/week20-the-map-of-your-ignorance.html 'https://upload.higgsfield.ai/user_3F25YFajOFHb5DkbJau2Yi859Vk/50be38b2-dd11-41e0-ad3d-ae207ebd8780.html'
+          mkdir -p assets/headers
+          curl -fsSL -o assets/headers/week20-the-map-of-your-ignorance.jpg 'https://upload.higgsfield.ai/user_3F25YFajOFHb5DkbJau2Yi859Vk/7fbe79aa-d115-45a7-9e91-25ff10bd9892.png'
+          curl -fsSL -o app.js 'https://upload.higgsfield.ai/user_3F25YFajOFHb5DkbJau2Yi859Vk/847b4ba3-15af-4f1e-b190-8ea8f5dd6963.js'
+          git config user.name 'sundai-publish'
+          git config user.email 'actions@users.noreply.github.com'
+          git add articles/week20-the-map-of-your-ignorance.html assets/headers/week20-the-map-of-your-ignorance.jpg app.js
+          git commit -m 'SundAI Week 20: Your Agents Only Answer What You Ask'
+          git push
