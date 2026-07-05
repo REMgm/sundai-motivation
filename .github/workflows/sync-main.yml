@@ -1,0 +1,13 @@
+name: Sync main with Main
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: Main
+          fetch-depth: 0
+      - run: git push origin HEAD:main
