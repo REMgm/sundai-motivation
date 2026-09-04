@@ -653,13 +653,3 @@
     display: none;
   }
 }
-
-/* Publication details distinguish retrospective editions from release dates. */
-.article-content .article-publication-note,
-.article-content .article-cover-caption {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-3);
-}
-.article-content .article-cover-caption { margin-bottom: var(--space-8); }
