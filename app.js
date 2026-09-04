@@ -77,7 +77,10 @@
 
   // ====== ARTICLES DATA & RENDERING ======
   // Each article has a publishDate (YYYY-MM-DD). Articles only appear on or after that date.
-  const now = new Date();
+  // Release editions according to the publication's Amsterdam calendar.
+  const today = new Intl.DateTimeFormat('sv-SE', {
+    timeZone: 'Europe/Amsterdam', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).format(new Date());
 
   const articles = [
     { week: 0, publishDate: '2026-01-04', date: 'Jan 4, 2026', title: "Welcome to SundAI Motivation. Here's Why This Series Exists.", time: '6 min', img: './assets/headers/opening-welcome.jpg', slug: 'opening-welcome' },
@@ -100,14 +103,22 @@
     { week: 18, publishDate: '2026-06-14', date: 'Jun 14, 2026', title: "The Brief Is the Bottleneck: Claude Fable 5 Just Made Your Weakest Skill Visible", time: '8 min', img: './assets/headers/week18-fable-brief-bottleneck.jpg', slug: 'week18-fable-brief-bottleneck' },
     { week: 19, publishDate: '2026-06-27', date: 'Jun 28, 2026', title: "Your AI Team Has More Members Than You Think: Why Every Person Is Now a Manager of Agents.", time: '8 min', img: './assets/headers/week18-manager-of-agents.jpg', slug: 'week18-manager-of-agents' },
     { week: 20, publishDate: '2026-07-05', date: 'Jul 5, 2026', title: "Your Agents Only Answer What You Ask: Why the Next Competitive Edge Is a Map of Your Ignorance", time: '9 min', img: './assets/headers/week20-the-map-of-your-ignorance.jpg', slug: 'week20-the-map-of-your-ignorance' },
+    {"week": 21, "publishDate": "2026-07-12", "date": "Jul 12, 2026 edition", "title": "Your AI Agent Needs a Job Description", "time": "5 min", "img": "./assets/headers/week21-ai-agent-job-description-decision-boundaries.jpg", "alt": "A robotic gripper holds a brass key just outside a glass boundary with a keyhole.", "slug": "week21-ai-agent-job-description-decision-boundaries"},
+    {"week": 22, "publishDate": "2026-07-19", "date": "Jul 19, 2026 edition", "title": "The Most Expensive Word in AI Is “Done”", "time": "5 min", "img": "./assets/headers/week22-ai-agent-definition-of-done.jpg", "alt": "A large green checkmark stands above an open, empty white presentation box.", "slug": "week22-ai-agent-definition-of-done"},
+    {"week": 23, "publishDate": "2026-07-26", "date": "Jul 26, 2026 edition", "title": "Your AI Is Remembering the Wrong Things", "time": "5 min", "img": "./assets/headers/week23-ai-memory-source-owner-expiry.jpg", "alt": "Fresh teal folders sit in front of brittle amber folders in an open metal archive drawer.", "slug": "week23-ai-memory-source-owner-expiry"},
+    {"week": 24, "publishDate": "2026-08-02", "date": "Aug 2, 2026 edition", "title": "Your Fastest Agent Is Waiting for Approval", "time": "5 min", "img": "./assets/headers/week24-ai-approval-bottleneck.jpg", "alt": "A queue of white document bundles stops at a small brass gate beside an unused approval stamp.", "slug": "week24-ai-approval-bottleneck"},
+    {"week": 25, "publishDate": "2026-08-09", "date": "Aug 9, 2026 edition", "title": "The Handoff Is Where AI Work Breaks", "time": "5 min", "img": "./assets/headers/week25-ai-agent-handoffs-preserve-context.jpg", "alt": "Two industrial grippers pass a teal glass cube across a gap between work surfaces.", "slug": "week25-ai-agent-handoffs-preserve-context"},
+    {"week": 26, "publishDate": "2026-08-16", "date": "Aug 16, 2026 edition", "title": "Build an AI Fire Drill Before You Need One", "time": "5 min", "img": "./assets/headers/week26-ai-workflow-stop-recover-resume.jpg", "alt": "A red emergency-stop button stands in front of a teal-lit mechanism behind a clear safety screen.", "slug": "week26-ai-workflow-stop-recover-resume"},
+    {"week": 27, "publishDate": "2026-08-23", "date": "Aug 23, 2026 edition", "title": "Give Your Brand a Test Suite", "time": "5 min", "img": "./assets/headers/week27-brand-test-suite-ai-content.jpg", "alt": "A teal inspection lens magnifies a warped white ceramic cup among a row of cups.", "slug": "week27-brand-test-suite-ai-content"},
+    {"week": 28, "publishDate": "2026-08-30", "date": "Aug 30, 2026 edition", "title": "Your AI Pilot Needs an Exit Date", "time": "5 min", "img": "./assets/headers/week28-ai-pilot-expand-repair-stop.jpg", "alt": "A silver paper airplane points toward an open doorway in a glass cloche on a desk.", "slug": "week28-ai-pilot-expand-repair-stop"},
+    {"week": 29, "publishDate": "2026-09-06", "date": "Sep 6, 2026 edition", "title": "The AI Productivity Trap", "time": "5 min", "img": "./assets/headers/week29-ai-productivity-turning-time-into-value.jpg", "alt": "A glass hourglass filled with golden sand sits inside a polished steel mousetrap.", "slug": "week29-ai-productivity-turning-time-into-value"},
   ];
 
   const articlesGrid = document.querySelector('.articles-grid');
   if (articlesGrid) {
     // Show articles: hide future articles (publishDate > today)
     const visibleArticles = articles.filter(article => {
-      const pubDate = new Date(article.publishDate + 'T00:00:00');
-      return now >= pubDate;
+      return article.publishDate <= today;
     }).reverse();
 
     visibleArticles.forEach((article, index) => {
@@ -116,7 +127,7 @@
         card.className = 'article-card fade-in';
         card.style.animationDelay = `${index * 50}ms`;
         card.innerHTML = `
-          <img src="${article.img}" alt="${article.title}" class="article-card-image" loading="lazy" width="400" height="225">
+          <img src="${article.img}" alt="${article.alt || article.title}" class="article-card-image" loading="lazy" width="400" height="225">
           <div class="article-card-body">
             <h3 class="article-card-title">${article.title}</h3>
             <div class="article-card-meta">

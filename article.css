@@ -184,7 +184,8 @@
   font-weight: 600;
 }
 
-/* Section headings (h3) */
+/* Section headings */
+.article-content h2,
 .article-content h3 {
   font-family: var(--font-display);
   font-size: var(--text-xl);
@@ -604,6 +605,7 @@
     padding: var(--space-8) var(--space-4) var(--space-12);
   }
 
+  .article-content h2,
   .article-content h3 {
     font-size: var(--text-lg);
     margin-top: var(--space-8);
@@ -651,3 +653,13 @@
     display: none;
   }
 }
+
+/* Publication details distinguish retrospective editions from release dates. */
+.article-content .article-publication-note,
+.article-content .article-cover-caption {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+.article-content .article-cover-caption { margin-bottom: var(--space-8); }
